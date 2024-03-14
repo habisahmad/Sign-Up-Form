@@ -27,6 +27,8 @@ label{
 
 
 }
+
+
 .quote{
     width: 70vw;
     height: 30vh;
@@ -34,11 +36,13 @@ label{
 }
 
 #submit{
+    font-family: "Roboto", sans-serif;
     background-color: #FF69B4;
     color: white;
-    border-radius: 20%;
-    height: 20px;
-    flex-direction: column;
+    border-radius: 12px;
+    height: 50px;
+    width: 25%;
+    margin-left: 50px;
 }
 
 #submit:hover{
@@ -56,11 +60,13 @@ label{
 }
 
 .right-side{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #forms{
@@ -68,26 +74,35 @@ label{
     background-color: white;
     filter: drop-shadow(5px 5px 4px #242424);
     width: 70vw;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: -100px;
 }
+
 .form-row{
     display: flex;
-    gap: 20px;
+    gap: 50px;
     align-items: center;
     margin-left: 50px;
 }
 
 form label {
-    color: black;
+    color: #FF69B4;
     min-width: 100px; 
 }
 form input {
-    width: 200px; 
+    width: 300px; 
+    height: 25px;
 }
 
 input, label{
     display: block;
+}
+
+.d{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 2em;
 }
