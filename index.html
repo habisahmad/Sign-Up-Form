@@ -11,53 +11,50 @@
         <img src="https://plus.unsplash.com/premium_photo-1686255006386-5f58b00ffe9d?q=80&w=3388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
     </div>
     <div class="right-side">
-        <div class="quote">
-            <b id="quote">This is not a real online service! You know you need something like this in your life to help realize </b>
-            <b id="quote">your deepest dreams. Sign up <i>now</i> to get started.</b>
-            <div class="blank"> </div>
-            <b id="quote" class="quota" >You know you want to.</b>
-        </div>
+        <form>
+            <div class="quote">
+                <b id="quote">This is not a real online service! You know you need something like this in your life to help realize </b>
+                <b id="quote">your deepest dreams. Sign up <i>now</i> to get started.</b>
+                <div class="blank"> </div>
+                <b id="quote" class="quota" >You know you want to.</b>
+            </div>
 
-        <div id="forms">
-            <p class="d">Let's do this!</p>
-            <div class="form-row">
+            <div id="forms">
+                <p class="d">Let's do this!</p>
                 <form>
-                    <div style="float:left;margin-right:20px;">
-                        <label for="first_name" >First Name:</label>
-                        <input type="text" required placeholder="John">
+                    <div class="form-row">
+                            <div style="float:left;margin-right:20px;">
+                                <label for="first_name" >First Name:</label>
+                                <input type="text" required placeholder="John">
+                            </div>
+                            <div style="float:left;">
+                                <label for="last_name">Last Name:</label>
+                                <input type="text" required placeholder="Doe">
+                            </div>
                     </div>
-                    <div style="float:left;">
-                        <label for="last_name">Last Name:</label>
-                        <input type="text" required placeholder="Doe">
+                    <div class="form-row">
+                            <div style="float:left;margin-right:20px">
+                                <label for="email">Email:</label>
+                                <input type="text" required placeholder="name@example.com">
+                            </div>
+                            <div style="float:left;">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" required placeholder="301-458-3911">
+                            </div>
                     </div>
-                </form>
+                    <div class="form-row">
+                            <div style="float:left; margin-right: 20px;">
+                                <label for="pass">Password:</label>
+                                <input type="password" required placeholder="Minimum 12 characters" minlength="12">
+                            </div>
+                            <div style="float:left;">
+                                <label for="phone">Confirm Password:</label>
+                                <input type="password" required>
+                            </div>
+                </div>
             </div>
-            <div class="form-row">
-                <form>
-                    <div style="float:left;margin-right:20px">
-                        <label for="email">Email:</label>
-                        <input type="text" required placeholder="name@example.com">
-                    </div>
-                    <div style="float:left;">
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" required placeholder="301-458-3911">
-                    </div>
-                </form>
-            </div>
-            <div class="form-row">
-                <form>
-                    <div style="float:left; margin-right: 20px;">
-                        <label for="pass">Password:</label>
-                        <input type="password" required">
-                    </div>
-                    <div style="float:left;">
-                        <label for="phone">Confirm Password:</label>
-                        <input type="password" required>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <button type="submit" id="submit">Create Account</button>
+            <button type="submit" id="submit">Create Account</button>
+        </form>
     </div>
 </body>
 </html>
