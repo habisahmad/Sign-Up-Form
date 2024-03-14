@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: #FFFFF0;
+    background-color: #1A1A1A;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,10 +18,12 @@ label{
 }
 
 #quote{
-    color: rgb(0, 0, 0);
+    color: #FF69B4;
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 1.5em;
+    margin-left: 50px;
+
 
 
 }
@@ -32,11 +34,25 @@ label{
 }
 
 #submit{
-    background-color: #596D48;
+    background-color: #FF69B4;
     color: white;
     border-radius: 20%;
     height: 20px;
     flex-direction: column;
+}
+
+#submit:hover{
+    background-color: #ff49a7;
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 .right-side{
@@ -61,14 +77,17 @@ label{
     display: flex;
     gap: 20px;
     align-items: center;
-    justify-content: center;
+    margin-left: 50px;
 }
 
 form label {
     color: black;
     min-width: 100px; 
 }
-
 form input {
     width: 200px; 
+}
+
+input, label{
+    display: block;
 }
