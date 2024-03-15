@@ -1,4 +1,12 @@
+@font-face{
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+}
 
+html{
+    position: relative;
+    min-height: 100%;
+}
 
 body{
     background-color: #1A1A1A;
@@ -8,9 +16,39 @@ body{
     align-items: center;
 }
 
-img{
-    height: 110vh;
+.left-side{
+    position: relative;
+}
+
+.ig{
+    height: 100vh;
     width: 30vw;
+    display: block;
+}
+
+
+.bg{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 40%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);   
+}
+
+span{
+    font-size: 100px;
+    color: white;
+    font-family: Norse, sans-serif;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#odin{
+    width: 100px;
 }
 
 label{
@@ -18,12 +56,16 @@ label{
 }
 
 #quote{
-    color: #FF69B4;
-    text-align: center;
+    text-align: center; 
     font-family: "Roboto", sans-serif;
+    color: #FF69B4;
     font-size: 1.5em;
     margin-left: 50px;
     font-stretch: condensed;
+    max-width: 70vw; 
+    margin: 0 auto; 
+    margin-left: 50px;
+
 
 
 }
@@ -33,6 +75,10 @@ label{
     width: 70vw;
     height: 30vh;
     padding-top: 50px;
+}
+
+.quote p{
+    margin-bottom: 10px;
 }
 
 #submit{
@@ -114,4 +160,33 @@ input, label{
     margin-left: 50px;
     margin-bottom: 50px;
     font-size: 2em;
+}
+
+#git{
+    width: 50px;
+}
+
+#footer{
+    text-align: center;
+    color: white;
+    background-color: #333;
+    display: flex;
+    width: 70vw;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    display: flex;
+    width: 30vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
